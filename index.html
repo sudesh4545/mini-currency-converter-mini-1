@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>RateOrbit</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body style="currency-converter">
+    <main class="shell">
+      <header class="top">
+        <a class="brand" href="./"
+          ><span class="logo">13</span
+          ><span
+            ><strong>RATEORBIT</strong
+            ><small>REFERENCE RATE CONVERTER</small></span
+          ></a
+        ><span class="hint">LOCAL MINI WEBSITE</span>
+      </header>
+      <section class="hero">
+        <span class="eyebrow">REFERENCE RATE CONVERTER</span>
+        <h1>Money moves.<br />Rates stay clear.</h1>
+        <p>
+          Convert currencies using dated reference rates, with source and
+          freshness always visible.
+        </p>
+      </section>
+      <section class="panel">
+        <div class="converter">
+          <div>
+            <label class="field"
+              ><span class="hint">AMOUNT</span
+              ><input
+                class="money"
+                id="amount"
+                inputmode="decimal"
+                value="100" /></label
+            ><label class="field"
+              ><span class="hint">FROM</span
+              ><select id="from"></select
+            ></label>
+          </div>
+          <button class="swap" id="swap" aria-label="Swap currencies">⇄</button>
+          <div>
+            <label class="field"
+              ><span class="hint">CONVERTED</span
+              ><input class="money" id="output" readonly /></label
+            ><label class="field"
+              ><span class="hint">TO</span
+              ><select id="to"></select
+            ></label>
+          </div>
+        </div>
+        <div class="result">
+          <span class="hint" id="rateLabel">FETCHING REFERENCE RATE</span
+          ><strong id="big">—</strong><span class="hint" id="date"></span>
+        </div>
+        <div class="chips quick">
+          <button data-pair="USD,INR">USD → INR</button
+          ><button data-pair="EUR,USD">EUR → USD</button
+          ><button data-pair="GBP,INR">GBP → INR</button
+          ><button id="refresh">Refresh</button>
+        </div>
+        <p class="status" id="status"></p>
+      </section>
+      <footer class="sudesh-credit" style="position:relative;margin-top:42px;padding:32px 24px 18px;border:1px solid #5261812b;border-radius:18px;background:linear-gradient(135deg,#050a15f2,#071525eb 55%,#16091ceb);color:#91a0b9;font:500 12px/1.7 Inter,system-ui,sans-serif;overflow:hidden">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(90deg,transparent 49.8%,#22d3ee14 50%,transparent 50.2%),linear-gradient(#a855f70d 1px,transparent 1px);background-size:420px 100%,100% 46px;pointer-events:none"></div>
+        <div style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:42px;align-items:start">
+          <section>
+            <strong style="display:block;color:#f8fafc;font:800 20px/1.1 ui-monospace,monospace;letter-spacing:.04em"><span style="color:#22d3ee">[</span><span style="color:#a855f7">SM</span><span style="color:#22d3ee">]</span></strong>
+            <p style="max-width:430px;margin:16px 0 10px;color:#9eabc1;font-size:14px">Learning by building — from modern web experiences to strong software-engineering fundamentals.</p>
+            <small style="display:block;color:#71829d;font:700 9px ui-monospace,monospace;letter-spacing:.2em">B.TECH IT STUDENT · FULL STACK DEVELOPER · BUILDER</small>
+            <div style="display:flex;gap:10px;margin-top:20px;flex-wrap:wrap">
+              <a aria-label="GitHub" href="https://github.com/sudesh4545" target="_blank" rel="noreferrer" style="display:grid;place-items:center;width:40px;height:40px;border:1px solid #60708e55;border-radius:11px;color:#dce8ff;text-decoration:none">GH</a>
+              <a aria-label="LinkedIn" href="https://www.linkedin.com/in/sudeshmehar3/" target="_blank" rel="noreferrer" style="display:grid;place-items:center;width:40px;height:40px;border:1px solid #60708e55;border-radius:11px;color:#dce8ff;text-decoration:none">in</a>
+              <a aria-label="Email" href="mailto:sudeshmehar3@gmail.com" style="display:grid;place-items:center;width:40px;height:40px;border:1px solid #60708e55;border-radius:11px;color:#dce8ff;text-decoration:none">@</a>
+              <a aria-label="Portfolio" href="https://sudesh4545.github.io/sudesh-portfolio/" target="_blank" rel="noreferrer" style="display:grid;place-items:center;width:40px;height:40px;border:1px solid #60708e55;border-radius:11px;color:#dce8ff;text-decoration:none">↗</a>
+            </div>
+          </section>
+          <section>
+            <small style="display:block;color:#f8fafc;font:800 9px ui-monospace,monospace;letter-spacing:.2em">GET IN TOUCH</small>
+            <a href="mailto:sudeshmehar3@gmail.com" style="display:block;margin-top:17px;color:#9eabc1;text-decoration:none;font-size:14px">sudeshmehar3@gmail.com</a>
+            <p style="margin:12px 0;color:#9eabc1;font-size:14px">New Delhi, India</p>
+            <p style="display:flex;align-items:center;gap:8px;margin:12px 0;color:#bad8cb"><i style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#1ee6a7;box-shadow:0 0 14px #1ee6a7"></i>Open to internships &amp; collaboration</p>
+            <div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:20px"><span style="padding:3px 9px;border:1px solid #52618144;border-radius:5px;font:600 9px ui-monospace,monospace">JavaScript</span><span style="padding:3px 9px;border:1px solid #52618144;border-radius:5px;font:600 9px ui-monospace,monospace">HTML</span><span style="padding:3px 9px;border:1px solid #52618144;border-radius:5px;font:600 9px ui-monospace,monospace">CSS</span></div>
+          </section>
+        </div>
+        <div style="position:relative;margin-top:28px;padding-top:16px;border-top:1px solid #5261812b;color:#65738c;font-size:10px">© 2026 Sudesh Mehar. Built with code, curiosity and creativity.</div>
+      </footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+
